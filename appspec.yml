@@ -20,4 +20,3 @@ hooks:
    AfterInstall:
     - location: scripts/restartapache.sh
       runas: root
-      
