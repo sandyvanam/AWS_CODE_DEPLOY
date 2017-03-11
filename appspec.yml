@@ -7,6 +7,8 @@ permissions:
    - object: /var/www/html
      pattern: "**"
      mode: 644
+     user: root
+     group www-data
      #mode: 755
      type:
        - file
