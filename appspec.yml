@@ -11,12 +11,6 @@ permissions:
      mode: 775
      type:
       - directory
-   - object:/var/www/html/aws_codedeploy_demo
-     pattern: "**"
-     owner: ubuntu
-     group: www-data
-     mode: 644
-     type:
       - file
 hooks:
    ValidateService:
