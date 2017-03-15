@@ -4,11 +4,9 @@ files:
    - source: /
      destination: /var/www/html/aws_codedeploy_demo
 permissions:
-   - object: /var/www/html
+   - object: /var/www/html/
      pattern: "**"
      mode: 644
-     user: root
-     group www-data
      #mode: 755
      type:
        - file
