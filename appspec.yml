@@ -15,4 +15,4 @@ permissions:
 hooks:
    ValidateService:
     - location: scripts/restartapache.sh
-  	  runas: ubuntu
+  	   runas: ubuntu
