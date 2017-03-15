@@ -1,15 +1,24 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/html/rates
+   - source: /
+     destination: /var/www/html/aws_codedeploy_demo
 permissions:
-  - object: /var/www/html/rates
-    pattern: "**"
-    owner: ubuntu
-    group: www-data
-    mode: 775
+   - object: /var/www/html/aws_codedeploy_demo
+     pattern: "**"
+     owner: ubuntu
+     group: www-data
+     mode: 775
+     type:
+      - directory
+   - object:/var/www/html/aws_codedeploy_demo
+     pattern: "**"
+     owner: ubuntu
+     group: www-data
+     mode: 644
+     type:
+      - file
 hooks:
- ValidateService:
-   - location: app-commands.sh
-   	 runas: ubuntu
+   ValidateService:
+    - location: scripts/restartapache.sh
+  	  runas: ubuntu
