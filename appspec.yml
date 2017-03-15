@@ -12,7 +12,3 @@ permissions:
      type:
       - directory
       - file
-hooks:
-   ValidateService:
-    - location: scripts/restartapache.sh
-  	   runas: ubuntu
