@@ -1,14 +1,25 @@
-version: 1.0
+version: 0.0
 os: linux
 files:
-   - source: /
-     destination: /var/www/html/aws_codedeploy_demo
+  - source: /
+    destination: /var/www/html/npat
 permissions:
-   - object: /var/www/html/aws_codedeploy_demo
+   - object: /var/www/html/npat
      pattern: "**"
-     owner: ubuntu
-     group: www-data
      mode: 775
+     owner: ubuntu	
+     group: ubuntu
      type:
-      - directory
-      - file
+       - directory
+   - object: /var/www/html/npat
+     pattern: "**"
+     mode: 775
+     owner: ubuntu	
+     group: ubuntu
+     type:
+       - file
+hooks:
+  ValidateService:
+    - location: scripts/startapache.sh
+      timeout: 300
+      runas: ubuntu
