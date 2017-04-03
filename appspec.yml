@@ -20,6 +20,6 @@ permissions:
        - file
 hooks:
   ValidateService:
-    - location: scripts/migrate.sh
+    - location: scripts/startapache.sh
       timeout: 300
       runas: ubuntu
