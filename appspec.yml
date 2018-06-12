@@ -7,19 +7,19 @@ permissions:
    - object: /var/www/html/npat
      pattern: "**"
      mode: 775
-     owner: ubuntu	
-     group: ubuntu
+     owner: root	
+     group: root
      type:
        - directory
    - object: /var/www/html/npat
      pattern: "**"
      mode: 775
-     owner: ubuntu	
-     group: ubuntu
+     owner: root	
+     group: root
      type:
        - file
 hooks:
   ValidateService:
     - location: scripts/startapache.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
