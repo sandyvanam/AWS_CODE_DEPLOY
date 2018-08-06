@@ -2,16 +2,16 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/npat
+    destination: /var/www/html/AWS_CODE_DEPLOY
 permissions:
-   - object: /var/www/html/npat
+   - object: /var/www/html/AWS_CODE_DEPLOY
      pattern: "**"
      mode: 775
      owner: root	
      group: root
      type:
        - directory
-   - object: /var/www/html/npat
+   - object: /var/www/html/AWS_CODE_DEPLOY
      pattern: "**"
      mode: 775
      owner: root	
