@@ -2,16 +2,16 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/AWS_CODE_DEPLOY
+    destination: /var/www/html
 permissions:
-   - object: /var/www/html/AWS_CODE_DEPLOY
+   - object: /var/www/html
      pattern: "**"
      mode: 775
      owner: root	
      group: root
      type:
        - directory
-   - object: /var/www/html/AWS_CODE_DEPLOY
+   - object: /var/www/html
      pattern: "**"
      mode: 775
      owner: root	
