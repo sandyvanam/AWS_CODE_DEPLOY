@@ -7,15 +7,15 @@ permissions:
    - object: /var/www/html
      pattern: "**"
      mode: 775
-     owner: root	
-     group: root
+     owner: www-data	
+     group: www-data
      type:
        - directory
    - object: /var/www/html
      pattern: "**"
      mode: 775
-     owner: root	
-     group: root
+     owner: www-data	
+     group: www-data
      type:
        - file
 hooks:
