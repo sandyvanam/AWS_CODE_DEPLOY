@@ -3,7 +3,7 @@
 <head>
 <title>TAG index</title>
 </head>
-<body  bgcolor="blue" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+<body  bgcolor="red" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
 <h1>
 <?php
 
