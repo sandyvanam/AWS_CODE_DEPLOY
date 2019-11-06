@@ -1,4 +1,4 @@
-<?php
+
 <html>
 <head>
 <title>TAG index</title>
@@ -12,4 +12,4 @@ echo " Hellow World!!.. Thanks for using AWS Code Deploy ";
 ?></h1>
 </body>
 </html>
-?>
+
